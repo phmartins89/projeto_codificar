@@ -16,6 +16,7 @@
         @endif
         <form method="POST" action="/orcamentos/editar/{{$orcamento->id}}">
             @csrf
+
               <div class="form-group">
                   <label for="nome" class="">Nome do Cliente</label>
                   <input value="{{ $orcamento->nome }}" type="text" class="form-control" name="nome" id="nome">
@@ -33,7 +34,8 @@
                   <input value="{{ $orcamento->data }}" type="date" class="form-control" name="data" id="data">
 
               </div>
-                <button class="btn btn-primary" onclick="window.location='{{ url("/orcamentos") }}'">Editar</button>
+              
+                    <button class="btn btn-primary" onclick="window.location='{{ url("/orcamentos") }}'">Editar</button>
 
         </form>
 @endsection

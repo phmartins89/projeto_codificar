@@ -17,7 +17,6 @@ class OrcamentosController extends Controller
         $nome_cliente = $request->input('nome_cliente');
 
         $orcamentos = Orcamento::query()
-            // ->where('nome', '=', $nome_cliente)
             ->orderBy('data','desc')
             ->get();
         $mensagem = $request->session()->get('mensagem');
@@ -30,7 +29,7 @@ class OrcamentosController extends Controller
     }
 
     public function filtro(Request $request){
-        //dd($request->all());
+        //dd($request->all()); TESTES
         $nome_cliente = $request->input('nome_cliente');
         $data_inicial = $request->input('data_inicial');
         $data_final = $request->input('data_final');
@@ -43,12 +42,11 @@ class OrcamentosController extends Controller
             ->orderBy('data','desc')
             ->get();
 
-         //dd($orcamentos->toSql());   
+         //dd($orcamentos->toSql());   TESTES
         $mensagem = $request->session()->get('mensagem');
 
 
         return view('orcamentos.index', compact('orcamentos','mensagem'));
-
 
     }
 
@@ -86,7 +84,7 @@ class OrcamentosController extends Controller
     public function store(OrcamentosFormRequest $request)
     {
         //$request->validate();
-       //dd($request->all());
+       //dd($request->all()); TESTES
         $orcamento = Orcamento::create($request->all());
         $request-> session()
             ->flash(

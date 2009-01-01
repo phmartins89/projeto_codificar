@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba24d722-4690-4043-839e-198ce7ff461d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Orcamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Orcamento.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="ba24d722-4690-4043-839e-198ce7ff461d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +158,7 @@
       <workItem from="1599059533807" duration="298000" />
       <workItem from="1599060005404" duration="4000" />
       <workItem from="1599060301696" duration="8979000" />
-      <workItem from="1599077616684" duration="3157000" />
+      <workItem from="1599077616684" duration="3158000" />
     </task>
     <servers />
   </component>

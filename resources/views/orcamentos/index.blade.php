@@ -53,31 +53,33 @@ Orçamentos
                     @foreach($orcamentos as $orcamento) 
                     <tr>
                         <td>
-                        {{ $orcamento->id}}
+                            {{ $orcamento->id}}
                         </td>
-                            <td>
-                            {{ $orcamento-> vendedor}}
-                                
-                            </td>
-                            <td>
-                        {{date('d/m/Y', strtotime($orcamento->data))}}
-                        </td>
+
                         <td>
-                        {{ $orcamento->nome}}
+                            {{ $orcamento-> vendedor}}
+                         </td>
+
+                         <td>
+                            {{date('d/m/Y', strtotime($orcamento->data))}}
                         </td>
+
+                        <td>
+                            {{ $orcamento->nome}}
+                        </td>
+                        
                         <td style="display: flex; flex-direction: row;">
                             @method('PUT')
                             <button class="btn btn-info btn-sm" style="margin-right: 15px;" onclick="window.location='{{ url("/orcamentos/editar/".$orcamento->id) }}'"><i class="fas fa-pen"></i></button>
-                            <form method="post" action="/orcamentos/{{$orcamento->id}}" onsubmit="return confirm('Tem certeza que gostaria de remover {{$orcamento->nome}}?')">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
-                            </form>
+                                <form method="post" action="/orcamentos/{{$orcamento->id}}" onsubmit="return confirm('Tem certeza que gostaria de remover {{$orcamento->nome}}?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+                                </form>
                         </td>
                     </tr>
                     @endforeach
-                </tbody>
-           
+                </tbody>           
             </table>
         </ul>
 @endsection
