@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba24d722-4690-4043-839e-198ce7ff461d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -130,9 +134,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projetoFinal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,7 +160,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599017202897</updated>
-      <workItem from="1599017203941" duration="4997000" />
+      <workItem from="1599017203941" duration="13902000" />
+      <workItem from="1599038862475" duration="783000" />
+      <workItem from="1599059533807" duration="298000" />
+      <workItem from="1599060005404" duration="4000" />
+      <workItem from="1599060301696" duration="2521000" />
     </task>
     <servers />
   </component>
@@ -163,13 +172,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="229" y="210" key="NewPhpClassDialog" timestamp="1599018138071">
+    <state x="687" y="222" key="FileChooserDialogImpl" timestamp="1599060312953">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="229" y="210" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599018138071" />
-    <state x="769" y="432" key="NewPhpFileDialog" timestamp="1599021163834">
+    <state x="687" y="222" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1599060312953" />
+    <state x="229" y="210" key="NewPhpClassDialog" timestamp="1599023380755">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="432" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599021163834" />
+    <state x="229" y="210" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599023380755" />
+    <state x="769" y="432" key="NewPhpFileDialog" timestamp="1599023298049">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="769" y="432" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1599023298049" />
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1599023082169">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="539" y="15" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1599023082169" />
   </component>
 </project>

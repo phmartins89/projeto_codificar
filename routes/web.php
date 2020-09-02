@@ -9,6 +9,7 @@ Route::get('/', function () {
 
 Route::get('/orcamentos','OrcamentosController@index');
 Route::get('/orcamentos/criar','OrcamentosController@create');
+Route::post('/orcamentos/criar','OrcamentosController@store');
 
 
 

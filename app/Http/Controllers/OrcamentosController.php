@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Orcamento;
 use Illuminate\Http\Request;
 use function GuzzleHttp\Psr7\_parse_request_uri;
 
@@ -12,21 +13,34 @@ class OrcamentosController extends Controller
 {
     public function index(Request $request) {
 
-        $orcamentos = [
-            'Pedro',
-            'Esta fazendo',
-            'um execelente',
-            'trabalho'
-        ];
-
-        return view('orcamentos.index', compact('orcamentos'));
+        $orcamentos = Orcamento::query()
+            -> orderBy('nome')
+            ->get();
+        $mensagem = $request->session()->get('mensagem');
 
 
-        return $html;
-    }
+
+        return view('orcamentos.index', compact('orcamentos','mensagem'));
+
+
+           }
 
     public function create()
     {
         return view('orcamentos.create');
+    }
+
+    public function store(Request $request)
+    {
+        $orcamento = Orcamento::create($request->all());
+        $request-> session()
+            ->flash(
+            'mensagem',
+            "Cliente {$orcamento->id} criado com sucesso {$orcamento->nome}!"
+        );
+
+        return redirect('/orcamentos');
+
+
     }
 }
