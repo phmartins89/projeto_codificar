@@ -16,6 +16,7 @@ class CriarTabelaOrcamentos extends Migration
         Schema::create('orcamentos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+
         });
     }
 

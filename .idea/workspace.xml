@@ -4,7 +4,8 @@
     <list default="true" id="ba24d722-4690-4043-839e-198ce7ff461d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -164,7 +165,7 @@
       <workItem from="1599038862475" duration="783000" />
       <workItem from="1599059533807" duration="298000" />
       <workItem from="1599060005404" duration="4000" />
-      <workItem from="1599060301696" duration="2521000" />
+      <workItem from="1599060301696" duration="8979000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\OrcamentosFormRequest;
 use App\Orcamento;
 use Illuminate\Http\Request;
 use function GuzzleHttp\Psr7\_parse_request_uri;
@@ -30,8 +31,9 @@ class OrcamentosController extends Controller
         return view('orcamentos.create');
     }
 
-    public function store(Request $request)
+    public function store(OrcamentosFormRequest $request)
     {
+        $request->validate();
         $orcamento = Orcamento::create($request->all());
         $request-> session()
             ->flash(
@@ -39,8 +41,19 @@ class OrcamentosController extends Controller
             "Cliente {$orcamento->id} criado com sucesso {$orcamento->nome}!"
         );
 
-        return redirect('/orcamentos');
-
-
+        return redirect() ->route('listar_orcamentos');
     }
+
+    public function destroy(Request $request)
+    {
+        Orcamento::destroy($request->id);
+        $request-> session()
+            ->flash(
+                'mensagem',
+                "Cliente removido com sucesso!"
+            );
+        return redirect()->route('listar_orcamentos');;
+    }
+
+
 }
