@@ -4,8 +4,8 @@
     <list default="true" id="ba24d722-4690-4043-839e-198ce7ff461d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Orcamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Orcamento.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_02_050110_criar_tabela_orcamentos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -138,7 +138,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projetoFinal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -166,6 +166,7 @@
       <workItem from="1599059533807" duration="298000" />
       <workItem from="1599060005404" duration="4000" />
       <workItem from="1599060301696" duration="8979000" />
+      <workItem from="1599077616684" duration="3157000" />
     </task>
     <servers />
   </component>

@@ -14,8 +14,11 @@ class OrcamentosController extends Controller
 {
     public function index(Request $request) {
 
+        $nome_cliente = $request->input('nome_cliente');
+
         $orcamentos = Orcamento::query()
-            -> orderBy('nome')
+            // ->where('nome', '=', $nome_cliente)
+            ->orderBy('data','desc')
             ->get();
         $mensagem = $request->session()->get('mensagem');
 
@@ -24,7 +27,58 @@ class OrcamentosController extends Controller
         return view('orcamentos.index', compact('orcamentos','mensagem'));
 
 
-           }
+    }
+
+    public function filtro(Request $request){
+        //dd($request->all());
+        $nome_cliente = $request->input('nome_cliente');
+        $data_inicial = $request->input('data_inicial');
+        $data_final = $request->input('data_final');
+
+        
+
+        $orcamentos = Orcamento::query()
+             ->where('nome', 'like', "%".$nome_cliente."%")
+             ->orWhere('vendedor', 'like', "%".$nome_cliente."%")
+             //->orWhereBetween('data',[$data_final, $data_inicial ])
+            ->orderBy('data','desc')
+            ->get();
+
+         //dd($orcamentos->toSql());   
+        $mensagem = $request->session()->get('mensagem');
+
+
+
+        return view('orcamentos.index', compact('orcamentos','mensagem'));
+
+
+    }
+
+    public function edit(Request $request)
+    {
+        Orcamento::findOrFail($request->id)
+                        ->fill($request->all())
+                        ->save();
+
+        
+        $orcamentos = Orcamento::query()
+                    ->orderBy('data','desc')
+                    ->get();
+            
+        $mensagem = $request->session()->get('mensagem');
+
+        return view('orcamentos.index', compact('orcamentos','mensagem'));
+    }
+
+    public function editIndex(Request $request) {
+        $id = $request->id;
+
+        $orcamento = Orcamento::find($id);
+
+        $mensagem = $request->session()->get('mensagem');
+
+        return view('orcamentos.edit', compact('orcamento','mensagem'));
+    }
 
     public function create()
     {
@@ -33,12 +87,13 @@ class OrcamentosController extends Controller
 
     public function store(OrcamentosFormRequest $request)
     {
-        $request->validate();
+        //$request->validate();
+       //dd($request->all());
         $orcamento = Orcamento::create($request->all());
         $request-> session()
             ->flash(
             'mensagem',
-            "Cliente {$orcamento->id} criado com sucesso {$orcamento->nome}!"
+            "Cliente criado com sucesso {$orcamento->nome}!"
         );
 
         return redirect() ->route('listar_orcamentos');
@@ -52,7 +107,7 @@ class OrcamentosController extends Controller
                 'mensagem',
                 "Cliente removido com sucesso!"
             );
-        return redirect()->route('listar_orcamentos');;
+        return redirect()->route('listar_orcamentos');
     }
 
 
