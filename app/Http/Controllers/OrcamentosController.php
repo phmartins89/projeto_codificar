@@ -40,13 +40,11 @@ class OrcamentosController extends Controller
         $orcamentos = Orcamento::query()
              ->where('nome', 'like', "%".$nome_cliente."%")
              ->orWhere('vendedor', 'like', "%".$nome_cliente."%")
-             //->orWhereBetween('data',[$data_final, $data_inicial ])
             ->orderBy('data','desc')
             ->get();
 
          //dd($orcamentos->toSql());   
         $mensagem = $request->session()->get('mensagem');
-
 
 
         return view('orcamentos.index', compact('orcamentos','mensagem'));

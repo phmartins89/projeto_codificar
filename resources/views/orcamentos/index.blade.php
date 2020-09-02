@@ -34,7 +34,7 @@ Orçamentos
                         </th>
 
                         <th>
-                            Nome do Vendedor
+                            Nome do Cliente
                         </th>
 
                         <th>
@@ -42,7 +42,7 @@ Orçamentos
                         </th>
 
                         <th>
-                            Nome do Cliente
+                            Nome do Vendedor
                         </th>
 
                         <th></th>
@@ -65,9 +65,9 @@ Orçamentos
                         <td>
                         {{ $orcamento->nome}}
                         </td>
-                        <td>
+                        <td style="display: flex; flex-direction: row;">
                             @method('PUT')
-                            <button class="btn btn-info btn-sm" onclick="window.location='{{ url("/orcamentos/editar/".$orcamento->id) }}'"><i class="fas fa-pen"></i></button>
+                            <button class="btn btn-info btn-sm" style="margin-right: 15px;" onclick="window.location='{{ url("/orcamentos/editar/".$orcamento->id) }}'"><i class="fas fa-pen"></i></button>
                             <form method="post" action="/orcamentos/{{$orcamento->id}}" onsubmit="return confirm('Tem certeza que gostaria de remover {{$orcamento->nome}}?')">
                                 @csrf
                                 @method('DELETE')
@@ -75,7 +75,6 @@ Orçamentos
                             </form>
                         </td>
                     </tr>
-
                     @endforeach
                 </tbody>
            
